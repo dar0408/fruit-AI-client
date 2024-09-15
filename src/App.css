@@ -1,38 +1,154 @@
-.App {
+/* General Styling for Body and Text */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling for Forms and Inputs */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul li {
+  margin: 15px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul li a {
+  text-decoration: none;
   color: white;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li a:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* General Container Styling */
+.container {
+  padding: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h2 {
+    font-size: 22px;
+  }
+
+  form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Media Query for Very Small Mobile Devices */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px;
   }
 }

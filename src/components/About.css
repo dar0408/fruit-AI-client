@@ -1,0 +1,43 @@
+.about-container {
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7, #f3e5f5, #ffe0b2); /* Matches the gradient from home */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  background-color: white;
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Matches the box-shadow from home */
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 2rem; /* Slightly larger for consistency with home title */
+  color: #6a1b9a; /* Matches the color from home */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem; /* Adjusted for better readability */
+  margin: 20px 0;
+  color: #333;
+}
+
+.about-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6a1b9a; /* Matches the color from home */
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-button:hover {
+  background-color: #4a0072; /* Darker shade for hover effect */
+}

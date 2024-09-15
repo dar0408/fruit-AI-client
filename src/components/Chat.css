@@ -1,0 +1,51 @@
+.chat-container {
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7, #f3e5f5, #ffe0b2); /* Apply gradient background */
+  padding: 20px;
+  border-radius: 25px; /* Match border-radius from about page */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Match box-shadow from about page */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #6a1b9a; /* Match color from about page */
+  font-size: 2rem; /* Adjusted for consistency with about page */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fruit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fruit-card {
+  background-color: white;
+  border: 1px solid #ececf1;
+  border-radius: 25px; /* Match border-radius from about page */
+  padding: 15px;
+  margin: 10px;
+  width: 150px; /* Adjusted width for consistency */
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Match box-shadow from about page */
+  cursor: pointer;
+  transition: transform 0.2s; /* Match transition from about page */
+}
+
+.fruit-card:hover {
+  transform: scale(1.05);
+}
+
+.fruit-detail {
+  background-color: white;
+  border: 1px solid #ececf1;
+  border-radius: 25px; /* Match border-radius from about page */
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Match box-shadow from about page */
+}
+
+.fruit-detail h3 {
+  color: #6a1b9a; /* Match color from about page */
+}
