@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# fruitAI Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+fruitAI is a web application that provides services such as Chat, Translator, FAQ, and About. It includes a backend API that manages FAQs related to fruits. The frontend is built using React and deployed on Vercel, while the backend is built using Mongodb and deployed on Render.
 
-## Available Scripts
+### Technologies Used:
+- **Frontend:** React (React Router, Async/Await API calls)
+- **Backend:** MongoDb (CRUD API for fruit FAQs)
+- **Deployment:** 
+  - Frontend: Vercel
+  - Backend: Render
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Project Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend (Django API) Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Start the Backend on Render:**
+   The backend must be up and running before starting the frontend to ensure proper API connectivity.
 
-### `npm test`
+   If you've deployed the backend on Render, ensure it's started using the Render dashboard:
+   
+   1. Log in to your Render account.
+   2. Go to your project and make sure the backend service is running.
+   3. Copy the backend URL that Render provides (e.g., `https://your-backend.onrender.com`).
+   
+   - **FAQ API Endpoint:** Once the backend is live, you can access the FAQ API at:
+     ```bash
+     https://your-backend.onrender.com/api/faqs
+     ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend (React) Setup
 
-### `npm run build`
+2. **Start the Frontend on Vercel:**
+   After the backend is running, follow these steps to start the frontend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - Navigate to your Vercel dashboard.
+   - Ensure that the frontend project is deployed correctly.
+   - Vercel will automatically connect to the backend if the proper API URL is used in your project code.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Local Development (Optional)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project locally, follow these steps:
 
-### `npm run eject`
+#### Backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Backend Repository:**
+   ```bash
+   git clone https://github.com/your-username/fruitAI-backend.git
+   cd fruitAI-backend
